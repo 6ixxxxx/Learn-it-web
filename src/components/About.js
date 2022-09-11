@@ -2,10 +2,19 @@ import React from "react";
 import "./About.css";
 import Aboutimg from "../images/casual.png"
 import { NavLink } from "react-router-dom"
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react";
+
 
 export default function About({myTheme}) {
+
+    useEffect(()=>{
+        Aos.init({duration: 2000})
+    }, [])
+
     return(
-        <div className="about"  data-theme={myTheme}>
+        <div className="about" data-aos="slide-up" data-theme={myTheme}>
             <div className="about--img">
                 <img src={Aboutimg} alt="a child reading" className="about--img"/>
             </div>
