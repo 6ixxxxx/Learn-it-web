@@ -16,7 +16,7 @@ export default function Footer({myTheme}) {
                     <FaInstagram size={20} />
                 </div>
                
-                <h6>Copyright (c) 2022 All rights reserved || This was designed by <a href="https://6ixxxxx.github.io/portfolio-6ixxxxx">6ixxxxx</a></h6>
+                <h6>Copyright (c) {`${new Date().getFullYear()}`} All rights reserved || This was designed by <a href="https://6ixxxxx.github.io/portfolio-6ixxxxx">6ixxxxx</a></h6>
             </div>
         </div>
     )
